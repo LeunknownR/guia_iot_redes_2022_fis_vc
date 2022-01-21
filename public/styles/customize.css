@@ -49,6 +49,7 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 10px 40px;
+    gap: 10px;
     background-color: var(--second-color-green-400);
 }
 #main-header h1 {
@@ -65,6 +66,16 @@ body {
     background-color: var(--third-color-green-600);
     height: 100%;
     width: 30%;
+}
+#sidebar-nav .filter {
+    display: none;
+    background-color: #00000066;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 100vh;
+    z-index: 1;
 }
 #sidebar-nav ul {
     display: flex;
@@ -89,7 +100,6 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
-#sidebar-nav ul a:hover,
 #sidebar-nav ul a.active {
     color: var(--yellow-orange);
     background-color: var(--color-hover-transparent);
@@ -191,12 +201,28 @@ main h2 {
     width: 100%;
 }
 
+/* Card Model 2 */
+.card-model-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--second-color-green-400);
+}
+.card-model-2 p {
+    margin: 20px;
+    font-size: 15px;
+    color: var(--white);
+}
+
 /* List Card 2 */
 .list-card-2 {
     display: flex;
     justify-content: space-between;
     background-color: var(--second-color-green-400);
     border-radius: 20px;
+    height: 100px;
 }
 .list-card-2 .square-number {
     display: flex;
@@ -236,4 +262,60 @@ main h2 {
 .list-card-2 .content .iconify {
     font-size: 60px;
     color: var(--green-light-100);
+}
+.list-card-2:nth-child(1) .content .iconify,
+.list-card-2:nth-child(2) .content .iconify, 
+.list-card-2:nth-child(3) .content .iconify, 
+.list-card-2:nth-child(7) .content .iconify, 
+.list-card-2:nth-child(8) .content .iconify, 
+.list-card-2:nth-child(9) .content .iconify {
+    font-size: 100px;
+}
+
+/* Button */
+#btn-collapse-sidebar-nav {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 40px;
+}
+#btn-collapse-sidebar-nav .iconify {
+    color: var(--green-icon);
+    transition: 0.4s;
+}
+#btn-collapse-sidebar-nav:hover .iconify {
+    color: var(--green-light-100);
+}
+
+@media (max-width: 900px) {
+    #btn-collapse-sidebar-nav {
+        display: block;
+    }
+    #sidebar-nav {
+        transform: translateX(-300px);        
+        position: fixed;
+        transition: 0.5s;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 300px;
+    }
+    #sidebar-nav.active {
+        transform: translateX(0);
+    }
+    #sidebar-nav .filter {
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s;
+        z-index: -1;
+    }
+    #sidebar-nav .filter.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    main {
+        width: 100%;
+    }
 }

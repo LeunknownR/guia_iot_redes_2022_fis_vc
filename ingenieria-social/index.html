@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta 
@@ -8,50 +8,145 @@
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../public/img/logo.png" type="image/x-icon">
     <!-- Styles -->
-    <link rel="stylesheet" href="/public/styles/customize.css">
-    <link rel="stylesheet" href="/public/styles/index.css">
+    <link rel="stylesheet" href="../public/styles/normalize.css">
+    <link rel="stylesheet" href="../public/styles/customize.css">
+    <link rel="stylesheet" href="../public/styles/ingenieria-social.css">
     <title>Seguridad en el IoT</title>
 </head>
 <body>
     <header id="main-header">
+        <button id="btn-collapse-sidebar-nav">
+            <span class="iconify" data-icon="eva:menu-fill"></span>
+        </button>
         <h1>SEGURIDAD EN LOS DISPOSITIVOS IOT</h1>
-        <img src="/public/img/logo_header.png" alt="Seguridad en el IoT"/>
+        <img src="../public/img/logo.png" alt="Seguridad en el IoT"/>
     </header>
-    <aside id="sidebar-nav">
-        <ul>
-            <li>
-                <a href="/">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="/principales-fallos-seguridad-iot/">
-                    Principales fallos de seguridad de los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/tipos-ataques-dispositivos-iot/">
-                    Tipos de ataques a los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/consejos/">
-                    Consejos para proteger tu red IoT
-                </a>
-            </li>
-            <li>
-                <a href="/ingenieria-social/">
-                    ¿Qué es la ingeniería social?
-                </a>
-            </li>
-            <li>
-                <a href="/ataques-fuerza-bruta/">
-                    Ataques de fuerza bruta
-                </a>
-            </li>
-        </ul>
-    </aside>
+    <section id="fragment-sidebar-and-main">
+        <div class="filter"></div>
+        <aside id="sidebar-nav">
+            <div class="filter"></div>
+            <ul>
+                <li>
+                    <a href="../">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/principales-fallos-seguridad-iot/">
+                        Principales fallos de seguridad de los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="../tipos-ataques-dispositivos-iot/">
+                        Tipos de ataques a los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="../consejos/">
+                        Consejos para Proteger tu red IoT
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        class="active"
+                        href="../ingenieria-social/">
+                        ¿Qué es la ingeniería social?
+                    </a>
+                </li>
+                <li>
+                    <a href="../ataques-mas-famosos/">
+                        Los más grandes ataques asociados a IoT
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <h2>> ¿QUÉ ES LA INGENIERÍA SOCIAL?</h2>
+            <section>
+                <article class="card-model-2">
+                    <img 
+                        src="../public/img/ingenieria-social/image1.png" 
+                        alt="¿QUÉ ES LA INGENIERÍA SOCIAL?"/>
+                    <p>
+                        La ingeniería social basa su comportamiento en una premisa básica: es más fácil manejar a las personas que a las máquinas. Para llevar a cabo este tipo de ataque se utilizan técnicas de manipulación psicológica con el objetivo de conseguir que los usuarios revelen información confidencial o realicen cualquier tipo de acción que pueda beneficiar al ciberdelincuente.
+                        Los ataques de ingeniería social se pueden dividir en dos tipos distintos dependiendo del número de interacciones que requieran por parte del ciberdelincuente.
+                    </p>
+                </article>
+            </section>
+            <h2>> TIPOS</h2>
+            <section id="tipos-ing-social">
+                <article class="card-model-1">
+                    <h4>Hunting</h4>
+                    <img 
+                        src="../public/img/ingenieria-social/image2.png" 
+                        alt="Hunting"/>
+                    <p>
+                        Este tipo de ataques buscan afectar al mayor número de usuarios realizando, únicamente, una comunicación. Son comunes en campañas de phishing, como los realizados contra entidades energéticas o bancarias.
+                    </p>
+                </article>
+                <article class="card-model-1">
+                    <h4>Farming</h4>
+                    <img 
+                        src="../public/img/ingenieria-social/image3.png" 
+                        alt="Hunting"/>
+                    <p>
+                        En los ataques de farming los ciberdelincuentes realizan varias comunicaciones con las víctimas hasta conseguir su objetivo u obtener la mayor cantidad de información posible.
+                    </p>
+                </article>
+            </section>
+            <h2>> ¿QUÉ TECNICAS UTILIZAN LOS CIBERDELINCUENTES EN SUS ATAQUES?</h2>
+            <section id="tecn-util-ciber-ataq">
+                <p>
+                    A pesar de ser múltiples y varias las técnicas utilizadas por los ciberdelincuentes para manipular a sus víctimas, suelen seguir una serie de principios básicos:
+                    <br/>
+                    <br/>
+                    •	<span>Voluntad de ayudar:</span> Sobre todo en los entornos laborales, los trabajadores, generalmente, cuentan con esta voluntad de ayudar a los compañeros en todo lo posible. Por este motivo, los ciberdelincuentes pueden hacerse pasar por un falso empleado de la empresa.
+                    <br/>
+                    <br/>
+                    •	<span>Temor a perder un servicio:</span> Esta técnica es habitualmente utilizada en campañas de phishing. Bajo el pretexto de existir repetidos accesos no autorizados, cambio en las políticas o cualquier otro engaño, los ciberdelincuentes fuerzan a la víctima acceder a una web fraudulenta donde roban información confidencial.
+                    <br/>
+                    <br/>
+                    •	<span>Respeto social:</span> En algunos casos, los ciberdelincuentes basan su estrategia en el miedo que tienen los usuarios a no ser socialmente aceptados o a perder su reputación. Esto es habitual en los correos de extorsión, donde los ciberdelincuentes amenazan con difundir un supuesto video privado que en realidad no existe.
+                    <br/>
+                    <br/>
+                    •	<span>Gratis:</span> Este tipo de engaño se basa en ofrecer un producto o servicio gratis a cambio de información privada. Este tipo de fraude suele llevarse a cabo por medio de páginas web emergentes que suelen aparecer cuando se navega por sitios poco legítimos. También es común en mensajes de redes sociales o aplicaciones de mensajería.
+                </p>
+            </section>
+            <h2>> ¿CÓMO EVITAR ESTOS ATAQUES?</h2>
+            <section id="evitar-ataques">
+                <p>
+                    Los ataques de ingeniería social son especialmente difíciles de contrarrestar porque están específicamente diseñados para aprovechar rasgos humanos como la curiosidad, el respeto por la autoridad y el deseo de ayudar a un amigo. Existen, no obstante, una serie de consejos que pueden ayudarte a detectar estos ataques de ingeniería social
+                </p>
+                <section class="container">
+                    <article class="card">
+                        <h4>VERIFICA LA FUENTE</h4>
+                        <p>
+                            Plantéate un momento de dónde procede la comunicación, en lugar de confiar en ella a ciegas. Una memoria USB aparece de la nada en tu mesa de trabajo, ¿y no sabes qué es? ¿Recibes porque sí una llamada de teléfono diciéndote que has heredado cinco millones de dólares? ¿El director ejecutivo de tu empresa te envía un correo electrónico solicitando un montón de información de empleados concretos? Todos estos ejemplos suenan sospechosos y deberían tratarse como tales.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h4>SOLICITA IDENTIFICACIÓN</h4>
+                        <p>
+                            Uno de los ataques de ingeniería social más sencillos consiste en saltarse los controles de seguridad de entrada a un edificio portando una caja grande o un fajo de carpetas bajo el brazo. Al fin y al cabo, siempre habrá alguna persona amable que nos abrirá la puerta para facilitarnos el paso. No caigas en la trampa. Pide siempre la identificación.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h4>ROMPE EL BUCLE</h4>
+                        <p>
+                            La ingeniería social suele depender de una cierta sensación de urgencia. Los atacantes esperan que sus objetivos no reflexionen demasiado sobre lo que está sucediendo. Por eso, el mero hecho de tomarte un momento para pensar puede desalentar estos ataques y demostrar exactamente lo que son: estafas.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </section>
+    <footer id="main-footer">
+        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IOT</h5>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    <script src="../public/scripts/customize.js"></script>
 </body>
 </html>
