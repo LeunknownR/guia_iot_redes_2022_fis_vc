@@ -1,0 +1,51 @@
+main h2 {
+    color: var(--white);
+}
+#tecn-util-ciber-ataq {
+    background-color: var(--second-color-green-400);
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+#tecn-util-ciber-ataq p {
+    color: var(--white);
+}
+#tecn-util-ciber-ataq p span {
+    color: var(--yellow-orange);
+}
+
+#tipos-ing-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#evitar-ataques {
+    padding: 30px 50px;
+    background-color: var(--second-color-green-400);
+    border-radius: 20px;
+}
+#evitar-ataques p {
+    color: var(--white);
+}
+#evitar-ataques > p {
+    font-size: 14px;
+}
+#evitar-ataques .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+#evitar-ataques .container .card {
+    background-color: var(--bg-color-card);
+    border-radius: 20px;
+    width: 260px;
+    padding: 20px;
+}
+#evitar-ataques .container .card h4 {
+    color: var(--yellow-orange);
+}
+#evitar-ataques .container .card p {
+    font-size: 14px;
+}
