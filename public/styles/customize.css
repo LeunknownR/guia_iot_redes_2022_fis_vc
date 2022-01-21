@@ -190,12 +190,28 @@ main h2 {
     width: 100%;
 }
 
+/* Card Model 2 */
+.card-model-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--second-color-green-400);
+}
+.card-model-2 p {
+    margin: 20px;
+    font-size: 15px;
+    color: var(--white);
+}
+
 /* List Card 2 */
 .list-card-2 {
     display: flex;
     justify-content: space-between;
     background-color: var(--second-color-green-400);
     border-radius: 20px;
+    height: 100px;
 }
 .list-card-2 .square-number {
     display: flex;
@@ -235,4 +251,12 @@ main h2 {
 .list-card-2 .content .iconify {
     font-size: 60px;
     color: var(--green-light-100);
+}
+.list-card-2:nth-child(1) .content .iconify,
+.list-card-2:nth-child(2) .content .iconify, 
+.list-card-2:nth-child(3) .content .iconify, 
+.list-card-2:nth-child(7) .content .iconify, 
+.list-card-2:nth-child(8) .content .iconify, 
+.list-card-2:nth-child(9) .content .iconify {
+    font-size: 100px;
 }
