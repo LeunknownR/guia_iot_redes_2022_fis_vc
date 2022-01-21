@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta 
@@ -10,6 +10,7 @@
         content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
     <!-- Styles -->
+    <link rel="stylesheet" href="/public/styles/normalize.css">
     <link rel="stylesheet" href="/public/styles/customize.css">
     <link rel="stylesheet" href="/public/styles/ataques-fuerza-bruta.css">
     <title>Seguridad en el IoT</title>
@@ -17,41 +18,99 @@
 <body>
     <header id="main-header">
         <h1>SEGURIDAD EN LOS DISPOSITIVOS IOT</h1>
-        <img src="/public/img/logo_header.png" alt="Seguridad en el IoT"/>
+        <img src="/public/img/logo.png" alt="Seguridad en el IoT"/>
     </header>
-    <aside id="sidebar-nav">
-        <ul>
-            <li>
-                <a href="/">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="/principales-fallos-seguridad-iot/">
-                    Principales fallos de seguridad de los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/tipos-ataques-dispositivos-iot/">
-                    Tipos de ataques a los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/consejos/">
-                    Consejos para Proteger tu red IoT
-                </a>
-            </li>
-            <li>
-                <a href="/ingenieria-social/">
-                    ¿Qué es la ingeniería social?
-                </a>
-            </li>
-            <li>
-                <a href="/ataques-mas-famosos/">
-                    Los más grandes ataques asociados a IoT
-                </a>
-            </li>
-        </ul>
-    </aside>
+    <section id="fragment-sidebar-and-main">
+        <aside id="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="/">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/principales-fallos-seguridad-iot/">
+                        Principales fallos de seguridad de los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/tipos-ataques-dispositivos-iot/">
+                        Tipos de ataques a los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/consejos/">
+                        Consejos para Proteger tu red IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/ingenieria-social/">
+                        ¿Qué es la ingeniería social?
+                    </a>
+                </li>
+                <li>
+                    <a  
+                        class="active"
+                        href="/ataques-fuerza-bruta/">
+                        Ataques de fuerza bruta
+                    </a>
+                </li>
+                <li>
+                    <a href="/ataques-mas-famosos/">
+                        Los más grandes ataques asociados a IoT
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <h2>> PRINCIPALES FALLOS DE SEGURIDAD DE LOS DISPOSITIVOS IOT</h2>
+            <section id="container-info-fuerza-bruta">
+                <p>El ataque de fuerza bruta es simple: Combina software, técnicas de ensayo y error, y la aplicación de un algoritmo de sucesión de palabras, caracteres y dígitos. Mediante estas variables, los hackers dan con la clave de validación muchas más veces de las que pensamos.</p>
+                <h3>¿Qué tan efectivos son los Ataques de Fuerza Bruta?</h3>
+                <article class="content">
+                    <p>Un ataque de fuerza bruta requiere de mucho talento y tenacidad; porque nunca puede predecirse con total certeza cuánto tiempo puede llevar un ataque de fuerza bruta exitoso.
+                        En otras palabras, los hackers pueden tardar desde unos pocos minutos hasta años en quebrar un código mediante ellos; todo siempre dependiendo de la longitud y complejidad de la contraseña que quieren quebrar.
+                        Por esta razón, la recomendación general es crear contraseñas de longitud considerable, es decir; al menos 8 caracteres que incluyan mayúsculas, minúsculas, caracteres especiales y dígitos.
+                        Sin embargo, estas medidas por sí solas no garantizan por completo la integridad de tus datos de acceso a tus cuentas. Dicho de otra forma, los ataques de fuerza bruta tienen más tentáculos y estrategias que te conviene prevenir.
+                    </p>
+                    <img src="/public/img/ataques-fuerza-bruta/image1.png" alt="Hacker sorprendido">
+                </article>
+            </section>
+            <h2>> TIPOS DE ATAQUES</h2>
+            <section class="container-attack">
+                <article class="content">
+                    <div>
+                        <h4>Ataque de diccionario</h4>
+                    </div>
+                    <p>Por una parte, encontramos los ataques de diccionario. Su lógica es sencilla: Consiste en probar todas las palabras del diccionario.
+                        Aunque pareciera mucho trabajo por hacer, la verdad es que suele ser más eficaz que un ataque de fuerza bruta porque muchos usuarios emplean una palabra en su lengua que puedan recordar con más facilidad.
+                    </p>
+                </article>
+                <img src="/public/img/ataques-fuerza-bruta/image2.png" alt="Encontrando contraseña">
+            </section>
+            <section class="container-attack">
+                <img src="/public/img/ataques-fuerza-bruta/image3.png" alt="Vulnerando seguridad">
+                <article class="content content-2">
+                    <div>
+                        <h4>Ataque de Tabla Arcoiris</h4>
+                    </div>
+                    <p>Por otra parte, encontramos los ataques arcoiris. Parte del valor hash para reproducir los pasos de la cadena hasta obtener la contraseña. Sin embargo, muchas veces el valor no se encuentra en la tabla; por lo que se recrea al reducir el valor con la misma función con la cual se creó la cadena.
+                        Este procedimiento se repite hasta conseguir el valor resumen en un punto final. Ahora bien, eso no significa que se ha encontrado la contraseña, sino la cadena de caracteres que al final terminará revelando el texto plano que compone la contraseña.
+                        Se les llaman Tablas Arcoiris porque se asigna un color distinto a cada reducción para evitar confusiones. Al final son tantas las reducciones con sus respectivos colores, que termina por parecer un arcoiris.
+                    </p>
+                </article>
+            </section>
+            <h2>> RECOMENDACIONES PARA EL USUARIO</h2>
+            <section id="container-recomendations">   
+                <img src="/public/img/ataques-fuerza-bruta/image4.png" alt="Check">
+                <p>La recomendación para los usuarios finales es tratar en lo posible de emplear contraseñas con 10 caracteres que contengan una combinación de símbolos y números. Con esto el grado de dificultad aumenta a un número de 171.3 billones de probabilidades.
+                    Si el sitio no permite contraseñas largas, se debe elegir contraseñas de combinación compleja en lugar de palabras simples. Se debe evitar las contraseñas comunes (“123456”,”abcdef”,”000000”) y cambiarlas con frecuencia.
+                </p>
+            </section>
+        </main>
+    </section>
+    <footer id="main-footer">
+        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IOT</h5>
+    </footer>  
 </body>
 </html>

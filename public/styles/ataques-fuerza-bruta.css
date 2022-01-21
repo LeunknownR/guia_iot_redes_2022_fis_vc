@@ -1,0 +1,62 @@
+main h2 {
+    color: var(--white);
+}
+main h3 {
+    color: var(--white);
+    font-size: 20px;
+}
+main h4 {
+    color: var(--yellow-orange);
+    font-size: 20px;
+}
+main p {
+    color: var(--white);
+    font-size: 13px;
+}
+#container-info-fuerza-bruta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--second-color-green-400);
+    padding: 20px 60px;
+    border-radius: 20px;
+    position: relative;
+}
+#container-info-fuerza-bruta .content {
+    display: flex;
+}
+.container-attack {
+    display:flex;
+}
+.container-attack .content {
+    background-color: var(--second-color-green-400);
+    border-radius: 20px 0 0 20px;
+}
+.container-attack .content-2 {
+    background-color: var(--second-color-green-400);
+    border-radius: 0 20px 20px 0;
+}
+.container-attack .content div {
+    background-color: var(--dark-color-900);
+    padding: 15px 25px;
+    border-radius: 20px 0 0 0;
+}
+.container-attack .content-2 div {
+    background-color: var(--dark-color-900);
+    padding: 15px 25px;
+    border-radius: 0 20px 0 0;
+}
+.container-attack .content div h4 {
+    margin: 0;
+}
+.container-attack .content p {
+    padding: 40px 20px;
+}
+#container-recomendations {
+    display: flex;
+    background-color: var(--second-color-green-400);
+    padding: 40px 20px;
+    align-items: center;
+    border-radius: 25px;
+    gap: 30px;
+}
