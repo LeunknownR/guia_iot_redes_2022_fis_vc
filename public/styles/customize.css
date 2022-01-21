@@ -236,6 +236,10 @@ main h2 {
     color: var(--white);
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
+    transition: 0.4s;
+}
+.list-card-2:hover .square-number {
+    background-color: var(--blue-hover);
 }
 .list-card-2 .content {
     display: flex;
