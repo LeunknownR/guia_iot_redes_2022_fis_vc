@@ -8,49 +8,122 @@
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
     <!-- Styles -->
-    <link rel="stylesheet" href="./public/styles/customize.css">
-    <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+    <link rel="stylesheet" href="/public/styles/customize.css">
+    <link rel="stylesheet" href="/public/styles/tipos-ataques-dispositivos-iot.css">
     <title>Seguridad en el IoT</title>
 </head>
 <body>
     <header id="main-header">
         <h1>SEGURIDAD EN LOS DISPOSITIVOS IOT</h1>
-        <img src="./public/img/logo_header.png" alt="Seguridad en el IoT"/>
+        <img src="/public/img/logo.png" alt="Seguridad en el IoT"/>
     </header>
-    <aside id="sidebar-nav">
-        <ul>
-            <li>
-                <a href="/">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="/pages/principales-fallos-seguridad-iot/">
-                    Principales fallos de seguridad de los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/pages/tipos-ataques-dispositivos-iot/">
-                    Tipos de ataques a los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/pages/consejos/">
-                    Consejos para Proteger tu red IoT
-                </a>
-            </li>
-            <li>
-                <a href="/pages/ingenieria-social/">
-                    ¿Qué es la ingeniería social?
-                </a>
-            </li>
-            <li>
-                <a href="/pages/ataques-mas-famosos/">
-                    Los más grandes ataques asociados a IoT
-                </a>
-            </li>
-        </ul>
-    </aside>
+    <section id="fragment-sidebar-and-main">
+        <aside id="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="/">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/principales-fallos-seguridad-iot/">
+                        Principales fallos de seguridad de los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        class="active"
+                        href="/tipos-ataques-dispositivos-iot/">
+                        Tipos de ataques a los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/consejos/">
+                        Consejos para Proteger tu red IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/ingenieria-social/">
+                        ¿Qué es la ingeniería social?
+                    </a>
+                </li>
+                <li>
+                    <a href="/ataques-mas-famosos/">
+                        Los más grandes ataques asociados a IoT
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <h2>> TIPOS DE ATAQUES A LOS DISPOSITIVOS IOT</h3>
+            <section id="container-cards-model-1-tipos-ataques-iot">
+                <p>
+                    Todas estas vulnerabilidades son factibles de ser aprovechadas y explotadas por cibercriminales con conocimientos, usándolas como armas para realizar distintos ataques digitales como los siguientes:
+                </p>
+                <section class="content">
+                    <article class="card-model-1">
+                        <h4>Ransomware o secuestro de dispositivos</h4>
+                        <img 
+                            src="/public/img/tipos-ataques/image0.png" 
+                            alt="Ransomware o secuestro de dispositivos"/>
+                        <p>
+                            Este tipo de ataque consiste en la infección del dispositivo mediante un virus que bloquea su uso hasta que se realiza un pago, normalmente en criptomonedas, para liberarlo. Aunque el pago no garantiza la recuperación del control del dispositivo.
+                        </p>
+                    </article>
+                    <article class="card-model-1">
+                        <h4>Ataques de denegación de servicio (DOS/DDOS)</h4>
+                        <img 
+                            src="/public/img/tipos-ataques/image1.png" 
+                            alt="Ataques de denegación de servicio (DOS/DDOS)"/>
+                        <p>
+                            Este tipo de ataque se aprovecha de las vulnerabilidades que tiene el dispositivo que le permiten obtener su control. Éste se une a una red con miles de equipos infectados que atacan a objetivos predefinidos de forma conjunta.
+                        </p>
+                    </article>
+                    <article class="card-model-1">
+                        <h4>Bots de spam</h4>
+                        <img 
+                            src="/public/img/tipos-ataques/image2.png" 
+                            alt="Bots de spam"/>
+                        <p>
+                            Con la infección, se busca el control del dispositivo para utilizarlo posteriormente para dirigir y gestionar el envío masivo de correo basura.
+                        </p>
+                    </article>
+                    <article class="card-model-1">
+                        <h4>Robo de información</h4>
+                        <img 
+                            src="/public/img/tipos-ataques/image3.png" 
+                            alt="Robo de información"/>
+                        <p>
+                            Este ciberataque permite acceder a documentos y archivos, así como realizar un análisis del tráfico de la red a la que están conectados y robar las credenciales de los diferentes servicios que usan los usuarios de dicha red (cuentas de correo, redes sociales, servicios financieros, tiendas online, etc.).
+                        </p>
+                    </article>
+                    <article class="card-model-1">
+                        <h4>Manipulación de las mediciones</h4>
+                        <img 
+                            src="/public/img/tipos-ataques/image4.png" 
+                            alt="Manipulación de las mediciones"/>
+                        <p>
+                            Tiene como objetivo que el servidor, en base a los datos observados, proporcione información falsa o ejecute órdenes erróneas para provocar averías en las infraestructuras o en las casas
+                        </p>
+                    </article>
+                    <article class="card-model-1">
+                        <h4>Privacidad</h4>
+                        <img 
+                            src="/public/img/tipos-ataques/image5.png" 
+                            alt="Privacidad"/>
+                        <p>
+                            Los atacantes pueden obtener información de la víctima, como su situación en un determinado lugar, sus gustos u obtener información de los dispositivos que el usuario tiene conectados a la red.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </section>
+    <footer id="main-footer">
+        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IOT</h5>
+    </footer>    
 </body>
 </html>

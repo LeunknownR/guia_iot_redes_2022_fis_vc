@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta 
@@ -8,49 +8,208 @@
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
     <!-- Styles -->
-    <link rel="stylesheet" href="./public/styles/customize.css">
-    <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+    <link rel="stylesheet" href="/public/styles/customize.css">
+    <link rel="stylesheet" href="/public/styles/consejos.css">
     <title>Seguridad en el IoT</title>
 </head>
 <body>
     <header id="main-header">
         <h1>SEGURIDAD EN LOS DISPOSITIVOS IOT</h1>
-        <img src="/public/img/logo_header.png" alt="Seguridad en el IoT"/>
+        <img src="/public/img/logo.png" alt="Seguridad en el IoT"/>
     </header>
-    <aside id="sidebar-nav">
-        <ul>
-            <li>
-                <a href="/">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="/principales-fallos-seguridad-iot/">
-                    Principales fallos de seguridad de los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/tipos-ataques-dispositivos-iot/">
-                    Tipos de ataques a los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/consejos/">
-                    Consejos para Proteger tu red IoT
-                </a>
-            </li>
-            <li>
-                <a href="/ingenieria-social/">
-                    ¿Qué es la ingeniería social?
-                </a>
-            </li>
-            <li>
-                <a href="/ataques-mas-famosos/">
-                    Los más grandes ataques asociados a IoT
-                </a>
-            </li>
-        </ul>
-    </aside>
+    <section id="fragment-sidebar-and-main">
+        <aside id="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="/">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/principales-fallos-seguridad-iot/">
+                        Principales fallos de seguridad de los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/tipos-ataques-dispositivos-iot/">
+                        Tipos de ataques a los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        class="active"
+                        href="/consejos/">
+                        Consejos para Proteger tu red IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/ingenieria-social/">
+                        ¿Qué es la ingeniería social?
+                    </a>
+                </li>
+                <li>
+                    <a href="/ataques-mas-famosos/">
+                        Los más grandes ataques asociados a IoT
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <h2>> CONSEJOS PARA PROTEGER TU RED IOT</h2>
+            <section id="container-list-card-2-consejos-iot">
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>1</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Falta de hardening
+                            </h3>
+                            <p>
+                                Falta de medidas que permitan robustecer los dispositivos desde el punto de vista físico, lo que permite a potenciales atacantes llegar a información sensible que podría ser de utilidad en un futuro ataque remoto o tomar control local del dispositivo. 
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="fluent:password-24-filled"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>2</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Red Independiente
+                            </h3>
+                            <p>
+                                Aísla este tipo de sistemas y los dispositivos que utilizas para conectarte con ellos en una red independiente, así evitarás que alguien que acceda a tu red wifi pueda interactuar con ellos. Si no necesitas acceder de forma remota a tu red, deshabilita la administración remota.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="ic:outline-wifi-password"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>3</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Contraseñas robustas
+                            </h3>
+                            <p>
+                                Protege todos los dispositivos como mínimo con WPA2 y contraseñas robustas. También es importante proteger la seguridad del router para evitar que alguien conectado a la red pueda acceder a él.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="iconoir:password-pass"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>4</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Filtrado de tráfico
+                            </h3>
+                            <p>
+                                Si tienes ciertos conocimientos técnicos, establece un filtrado de tráfico en la red para evitar que el tráfico no autorizado se dirija hacia algún dispositivo en concreto, o hacia el exterior de la red.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="whh:networksignal"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>5</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Datos cifrados
+                            </h3>
+                            <p>
+                                Es recomendable que la información que contenga o reciba el dispositivo esté cifrada para evitar el robo, la manipulación o la modificación de las acciones a realizar.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="eos-icons:secure-data"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>6</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Pasarle un antivirus
+                            </h3>
+                            <p>
+                                Realiza análisis periódicos con un antivirus en busca de infecciones, vulnerabilidades o cualquier otra amenaza.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="ic:baseline-security"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>7</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Revisar los permisos de las apps
+                            </h3>
+                            <p>
+                                Si tienes dispositivos IoT y utilizas en tu móvil las aplicaciones de control y gestión de los mismos, revisa que los permisos concedidos son los que necesita y si no, deshabilita aquellos permisos que no sean necesarios para su funcionamiento.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="ic:baseline-app-settings-alt"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>8</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Políticas de privacidad
+                            </h3>
+                            <p>
+                                Lee las políticas de privacidad de los dispositivos que utilices para estar informado sobre qué información recolecta, almacena y el uso que hace de ella la empresa creadora del producto.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="ic:twotone-privacy-tip"></span>
+                    </div>
+                </article>
+                <article class="list-card-2">
+                    <div class="square-number">
+                        <span>9</span>
+                    </div>
+                    <div class="content">
+                        <div class="text">
+                            <h3>
+                                Actualizaciones
+                            </h3>
+                            <p>
+                                Mantén actualizado el software de los equipos y el firmware de los dispositivos IoT. Cuando más actualizados estén y tengan los últimos parches de seguridad, más difícil serán de hackear.
+                            </p>
+                        </div>
+                        <span class="iconify" data-icon="dashicons:update-alt"></span>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </section>
+    <footer id="main-footer">
+        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IOT</h5>
+    </footer>
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
 </body>
 </html>

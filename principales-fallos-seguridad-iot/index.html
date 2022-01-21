@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta 
@@ -8,25 +8,31 @@
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
     <!-- Styles -->
-    <link rel="stylesheet" href="./public/styles/customize.css">
-    <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+    <link rel="stylesheet" href="/public/styles/customize.css">
+    <link rel="stylesheet" href="/public/styles/principales-fallos-seguridad-iot.css">
     <title>Seguridad en el IoT</title>
 </head>
 <body>
     <header id="main-header">
         <h1>SEGURIDAD EN LOS DISPOSITIVOS IOT</h1>
-        <img src="/public/img/logo_header.png" alt="Seguridad en el IoT"/>
+        <img src="/public/img/logo.png" alt="Seguridad en el IoT"/>
     </header>
-    <aside id="sidebar-nav">
+    <section id="fragment-sidebar-and-main">
+        <aside id="sidebar-nav">
         <ul>
             <li>
-                <a href="/">
+                <a 
+                    href="/">
                     Inicio
                 </a>
             </li>
             <li>
-                <a href="/principales-fallos-seguridad-iot/">
+                <a 
+                    class="active"
+                    href="/principales-fallos-seguridad-iot/">
                     Principales fallos de seguridad de los dispositivos IoT
                 </a>
             </li>
@@ -51,6 +57,127 @@
                 </a>
             </li>
         </ul>
-    </aside>
+        </aside>
+        <main>
+            <h2>> PRINCIPALES FALLOS DE SEGURIDAD DE LOS DISPOSITIVOS IOT</h2>
+            <section id="container-list-cards-princ-fallos-iot">
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>1</span>
+                    </div>
+                    <div class="content">
+                        <h3>Contraseñas débiles, predecibles</h3>
+                        <p>
+                            Uso de credenciales no modificables, disponibles de manera pública o fáciles de adivinar mediante fuerza bruta; e incluso de backdoors en firmware o software cliente que permiten obtener acceso no autorizado a sistemas aprovechando estas contraseñas vulnerables.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>2</span>
+                    </div>
+                    <div class="content">
+                        <h3>Servicios de red inseguros</h3>
+                        <p>
+                            Servicios de red inseguros e innecesarios corriendo en el propio dispositivo, especialmente en aquellos expuestos a Internet, que comprometen la confidencialidad, autenticidad o disponibilidad de la información o permiten control no autorizado de manera remota.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>3</span>
+                    </div>
+                    <div class="content">
+                        <h3>Ecosistema de interfaces inseguros</h3>
+                        <p>
+                            Problemas de seguridad en interfaces web, móviles, en la nube, o API de backend en ecosistemas que están fuera de los dispositivos y que permiten que tanto los dispositivos como ciertos componentes relacionados puedan ser comprometidos.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>4</span>
+                    </div>
+                    <div class="content">
+                        <h3>Falta de mecanismos de actualización seguros</h3>
+                        <p>
+                            Falta de un sistema sencillo para actualizar el dispositivo de manera segura. Esto incluye: falta de validación del firmware en el dispositivo, falta de seguridad en el envío (tránsito no cifrado), falta de mecanismos que permitan evitar volver un paso hacia atrás, y falta de notificaciones acerca de cambios de seguridad debido a las actualizaciones.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>5</span>
+                    </div>
+                    <div class="content">
+                        <h3>Uso de componentes poco seguros o anticuados</h3>
+                        <p>
+                            Uso de componentes/librerías de software obsoletas y/o inseguras que podrían permitir que el dispositivo sea comprometido. Esto incluye personalizaciones inseguras de la plataforma del sistema operativo y el uso de software de terceras partes o componentes de hardware de una cadena de suministro comprometida.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>6</span>
+                    </div>
+                    <div class="content">
+                        <h3>Insuficiente protección a la privacidad</h3>
+                        <p>
+                            Información personal del usuario almacenada en el dispositivo o en el entorno al cual se conecta el dispositivo que es utilizada de manera poco segura, inapropiada o sin permiso.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>7</span>
+                    </div>
+                    <div class="content">
+                        <h3>Transferencia y almacenamiento de datos de manera poco seguro</h3>
+                        <p>
+                            Falta de cifrado o control de acceso para datos sensibles que están dentro del ecosistema; incluyendo datos en reposo, en tránsito o durante su procesamiento.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>8</span>
+                    </div>
+                    <div class="content">
+                        <h3>Falta de controles de gestión</h3>
+                        <p>
+                            Falta de soporte de seguridad en dispositivos lanzados a producción, incluyendo la gestión de activos, gestión de actualizaciones, desarmado seguro, monitoreo de sistemas y capacidades de respuesta.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>9</span>
+                    </div>
+                    <div class="content">
+                        <h3>Configuración poco segura por defecto</h3>
+                        <p>
+                            Dispositivos o sistemas lanzados con configuraciones por defecto poco seguras o sin la posibilidad de hacer más seguro al sistema mediante la aplicación de restricciones a partir de cambios en la configuración.
+                        </p>
+                    </div>
+                </article>
+                <article class="list-card-1">
+                    <div class="circle-number">
+                        <span>10</span>
+                    </div>
+                    <div class="content">
+                        <h3>
+                            Falta de hardening
+                        </h3>
+                        <p>
+                            Falta de medidas que permitan robustecer los dispositivos desde el punto de vista físico, lo que permite a potenciales atacantes llegar a información sensible que podría ser de utilidad en un futuro ataque remoto o tomar control local del dispositivo. 
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </section>
+    <footer id="main-footer">
+        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IOT</h5>
+    </footer>
 </body>
 </html>

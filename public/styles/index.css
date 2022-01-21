@@ -1,0 +1,25 @@
+main * {
+    color: var(--white);
+}
+main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--second-color-green-400);
+    padding: 20px 60px;
+    border-radius: 20px;
+    position: relative;
+}
+main .content p {
+    font-size: 14px;
+}
+main .container-img {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+main .content > img {
+    position: absolute;
+    bottom: -200px;
+    right: 10%;
+}

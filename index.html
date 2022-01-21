@@ -8,52 +8,72 @@
     <meta 
         name="viewport" 
         content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
     <!-- Styles -->
-    <link rel="stylesheet" href="./public/styles/customize.css">
-    <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="/public/styles/normalize.css">
+    <link rel="stylesheet" href="/public/styles/customize.css">
+    <link rel="stylesheet" href="/public/styles/index.css">
     <title>Seguridad en el IoT</title>
 </head>
 <body>
     <header id="main-header">
         <h1>SEGURIDAD EN LOS DISPOSITIVOS IOT</h1>
-        <img src="/public/img/logo_header.png" alt="Seguridad en el IoT"/>
+        <img src="/public/img/logo.png" alt="Seguridad en el IoT"/>
     </header>
-    <aside id="sidebar-nav">
-        <ul>
-            <li>
-                <a href="/">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="/principales-fallos-seguridad-iot/">
-                    Principales fallos de seguridad de los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/tipos-ataques-dispositivos-iot/">
-                    Tipos de ataques a los dispositivos IoT
-                </a>
-            </li>
-            <li>
-                <a href="/consejos/">
-                    Consejos para Proteger tu red IoT
-                </a>
-            </li>
-            <li>
-                <a href="/ingenieria-social/">
-                    ¿Qué es la ingeniería social?
-                </a>
-            </li>
-            <li>
-                <a href="/ataques-mas-famosos/">
-                    Los más grandes ataques asociados a IoT
-                </a>
-            </li>
-        </ul>
-    </aside>
-    <footer>
-        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IoT</h5>
+    <section id="fragment-sidebar-and-main">
+        <aside id="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="/" class="active">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/principales-fallos-seguridad-iot/">
+                        Principales fallos de seguridad de los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/tipos-ataques-dispositivos-iot/">
+                        Tipos de ataques a los dispositivos IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/consejos/">
+                        Consejos para Proteger tu red IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/ingenieria-social/">
+                        ¿Qué es la ingeniería social?
+                    </a>
+                </li>
+                <li>
+                    <a href="/ataques-mas-famosos/">
+                        Los más grandes ataques asociados a IoT
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <h2>> ES IMPORTANTE SABER</h2>
+            <article class="content">
+                <p>
+                    El IoT es un concepto que se usa para explicar la tendencia de los dispositivos de cómo cada vez estos se conectan gradualmente a Internet y entre ellos. El IoT se ha convertido en un factor notorio a inicios de la última década gracias a la mejor accesibilidad, a la alta velocidad de internet, además de la reducción de costos que supuso frente al hardware y software.
+                    Los datos indican que para el 2030, habrá casi 25 440 millones de dispositivos conectados en todo el mundo. Estos dispositivos son fabricados por diferentes compañías, por lo tanto, pueden utilizar diferentes protocolos de comunicación, distintos softwares, sistemas operativos, arquitecturas de hardware de diferentes proveedores, donde la seguridad no es el factor en el que se invierta tiempo y presupuesto financiero. Se sabe que el 98% de sistemas IoT no está encriptado, exponiendo información confidencial y personal en la red. Debido a esto, el IoT está expuesto a numerosos ataques que podrían ser potencialmente perjudiciales para la persona u organización. 
+                    Son muchas las amenazas y riesgos que podemos encontrar en los dispositivos IoT desde el instante en que son utilizados por primera vez donde se pierde automáticamente la seguridad, ya que posiblemente sean rastreados por atacantes que podrían manipular el sistema de control y modificar las funcionalidades predeterminadas. 
+                </p>
+                <div class="container-img">
+                    <img src="/public/img/inicio/hacker.png" alt="Hacker IOT">
+                    <img src="/public/img/inicio/security.png" alt="Seguridad IOT">
+                    <img src="/public/img/inicio/internet.png" alt="Internet IOT">
+                </div>
+                <img src="/public/img/inicio/person-thinking.png" alt="Persona pensando IOT">
+            </article>
+        </main>
+    </section>
+    <footer id="main-footer">
+        <h5>©2022 SEGURIDAD EN DISPOSITIVOS IOT</h5>
     </footer>
 </body>
 </html>
